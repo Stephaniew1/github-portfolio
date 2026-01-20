@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stephanie | Projects</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="nav"></div>
+
+      <div class="card" style="margin-top:14px;">
+        <h1 class="h1">Projects</h1>
+        <p class="sub">A few things I’ve built. Code links go to GitHub.</p>
+      </div>
+
+      <div class="grid" id="projectsAll" style="margin-top:14px;"></div>
+
+      <div class="footer">Tip: edit <code>assets/projects.js</code> to add/update projects.</div>
+    </div>
+
+    <script src="./assets/nav.js"></script>
+    <script src="./assets/projects.js"></script>
+    <script>
+      renderProjects("projectsAll");
+    </script>
+  </body>
+</html>
