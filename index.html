@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stephanie | Home</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="nav"></div>
+
+      <div class="card" style="margin-top: 14px;">
+        <div class="badge">Tech • Projects • Portfolio</div>
+        <h1 class="h1">Hi, I’m Stephanie.</h1>
+        <p class="sub">I build things. Here’s a snapshot of what I’ve been working on.</p>
+
+        <hr class="hr" />
+
+        <div class="row">
+          <a class="btn" href="./projects.html">See all projects →</a>
+          <a class="btn" href="https://stephaniew1.github.io/github-portfolio/">Open portfolio site →</a>
+        </div>
+      </div>
+
+      <div style="margin-top: 14px;">
+        <div class="row">
+          <h2 style="margin:0;">Featured Projects</h2>
+          <span class="badge">Auto-generated from one list</span>
+        </div>
+
+        <div class="grid" id="projectsPreview"></div>
+      </div>
+
+      <div class="footer">© 2026 Stephanie • Built with plain HTML on GitHub Pages</div>
+    </div>
+
+    <script src="./assets/nav.js"></script>
+    <script src="./assets/projects.js"></script>
+    <script>
+      renderProjects("projectsPreview", 3);
+    </script>
+  </body>
+</html>
