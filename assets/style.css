@@ -1,0 +1,126 @@
+:root{
+  --bg:#0b1020;
+  --panel: rgba(255,255,255,.06);
+  --stroke: rgba(255,255,255,.12);
+  --text: rgba(255,255,255,.92);
+  --muted: rgba(255,255,255,.65);
+  --accent: #7c3aed; /* purple */
+  --accent2: #22c55e; /* green */
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(900px 500px at 20% 10%, rgba(124,58,237,.35), transparent 60%),
+    radial-gradient(900px 500px at 80% 20%, rgba(34,197,94,.22), transparent 60%),
+    radial-gradient(1200px 700px at 50% 100%, rgba(56,189,248,.14), transparent 60%),
+    var(--bg);
+}
+
+a{ color: var(--text); text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+.container{
+  max-width: 1080px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+
+.card{
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.35);
+  backdrop-filter: blur(10px);
+}
+
+.row{
+  display:flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--stroke);
+  background: rgba(255,255,255,.05);
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--stroke);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  font-weight: 600;
+}
+.btn:hover{ text-decoration:none; border-color: rgba(255,255,255,.22); }
+
+.h1{
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 8px 0;
+  letter-spacing: -0.02em;
+}
+
+.sub{
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.project h3{
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
+}
+.project p{
+  margin: 0 0 10px 0;
+  color: var(--muted);
+}
+.project .meta{
+  display:flex;
+  gap:10px;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: space-between;
+}
+.project .stack{
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+.hr{
+  height:1px;
+  background: rgba(255,255,255,.10);
+  margin: 16px 0;
+  border:0;
+}
+
+.footer{
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: .95rem;
+}
