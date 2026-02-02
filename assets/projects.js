@@ -1,9 +1,9 @@
 window.PROJECTS = [
   {
-    title: "Project One",
-    desc: "One sentence: what it does + why it matters.",
-    stack: "Python • FastAPI • SQLite",
-    repo: "https://github.com/stephaniew1/REPO1",
+    title: "Molecular Counter: Automated Counting & Clustering in STM images",
+    desc: "Jupyter notebook pipeline for scanning tunneling microscopy (STM) image analysis: reads Nanonis .sxm scans, performs background/mean correction and binarization (incl. Otsu thresholding), then detects molecules via blob detection / connected-component labeling, extracts region-based features (“molecular fingerprints”), and groups molecular species using PCA + K-Means clustering to automate counting and categorisation.",
+    stack: "Python • Jupyter • nanoispy •  NumPy • SciPy • pandas • scikit-image • scikit-learn • matplotlib",
+    repo: "https://github.com/Stephaniew1/Counting-Molecules",
     demo: "" // optional, e.g. "https://..."
   },
   {
